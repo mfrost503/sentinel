@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>library/Zend/Mvc</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--[if IE]><script src="excanvas.compressed.js"></script><![endif]-->
+    <script src="RGraph.common.core.js" ></script>
+    <script src="RGraph.common.tooltips.js" ></script>
+    <script src="RGraph.bar.js" ></script>
+    <script src="RGraph.scatter.js" ></script>
+  </head>
+
+  <body>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr><td class="title">library/Zend/Mvc</td></tr>
+      <tr><td><div align="center"><p><a href="library_Zend_Mvc.html">Back to Code Coverage report</a></p></div></td></tr>
+      <tr><td class="ruler"><img src="glass.png" width="3" height="3" alt=""></td></tr>
+    </table>
+
+    <br />
+
+    <center>
+      <table width="90%" cellpadding="2" cellspacing="1" border="0">
+        <tr>
+          <td valign="top">
+            <h2>Class Coverage Distribution</h2>
+            <canvas id="classCoverageDistribution" width="475" height="200"></canvas>
+            <script>
+            var ccd = new RGraph.Bar('classCoverageDistribution', [1,0,0,0,0,0,0,1,1,0,6,0]);
+            ccd.Set('chart.background.barcolor1', 'white');
+            ccd.Set('chart.background.barcolor2', 'white');
+            ccd.Set('chart.colors', ['blue']);
+            ccd.Set('chart.shadow', true);
+            ccd.Set('chart.shadow.offsetx', 3);
+            ccd.Set('chart.shadow.offsety', 3);
+            ccd.Set('chart.labels', ['0%','0-10%','10-20%','20-30%','30-40%','40-50%','50-60%','60-70%','70-80%','80-90%','90-100%','100%']);
+            ccd.Set('chart.text.size', 5);
+            ccd.Draw();
+            </script>
+          </td>
+
+          <td valign="top">
+            <h2>Class Complexity</h2>
+            <canvas id="classComplexity" width="475" height="200"></canvas>
+            <script>
+            var cc = new RGraph.Scatter('classComplexity', [[0,45,"blue","Application"],[70.27027027027,20,"blue","MvcEvent"],[63.636363636364,7,"blue","RouteMatch"],[93.333333333333,6,"blue","CreateViewModelFromArrayListener"],[92.592592592593,10,"blue","DefaultRenderingStrategy"],[95.238095238095,15,"blue","ExceptionStrategy"],[97.435897435897,14,"blue","InjectTemplateListener"],[94.736842105263,7,"blue","InjectViewModelListener"],[95.121951219512,14,"blue","RouteNotFoundStrategy"]]);
+            cc.Set('chart.xmax', 100);
+            cc.Set('chart.background.barcolor1', 'white');
+            cc.Set('chart.background.barcolor2', 'white');
+            cc.Set('chart.tickmarks', 'plus');
+            cc.Set('chart.ticksize', 5);
+            cc.Set('chart.text.size', 5);
+            cc.Set('chart.ylabels', false);
+            cc.Draw();
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <h2>Top Project Risks</h2>
+            <ul>
+              <li><a href="library_Zend_Mvc_Application.php.html#28">Application</a> (2070)</li>
+              <li><a href="library_Zend_Mvc_MvcEvent.php.html#10">MvcEvent</a> (30)</li>
+              <li><a href="library_Zend_Mvc_View_ExceptionStrategy.php.html#39">ExceptionStrategy</a> (15)</li>
+              <li><a href="library_Zend_Mvc_View_InjectTemplateListener.php.html#31">InjectTemplateListener</a> (14)</li>
+              <li><a href="library_Zend_Mvc_View_RouteNotFoundStrategy.php.html#39">RouteNotFoundStrategy</a> (14)</li>
+              <li><a href="library_Zend_Mvc_View_DefaultRenderingStrategy.php.html#38">DefaultRenderingStrategy</a> (10)</li>
+              <li><a href="library_Zend_Mvc_Router_RouteMatch.php.html#33">RouteMatch</a> (9)</li>
+              <li><a href="library_Zend_Mvc_View_InjectViewModelListener.php.html#30">InjectViewModelListener</a> (7)</li>
+              <li><a href="library_Zend_Mvc_View_CreateViewModelFromArrayListener.php.html#30">CreateViewModelFromArrayListener</a> (6)</li>
+
+            </ul>
+          </td>
+
+          <td valign="top">
+            <h2>Least Tested Methods</h2>
+            <ul>
+              <li><a href="library_Zend_Mvc_MvcEvent.php.html#24">MvcEvent::setRouter</a> (0%)</li>
+              <li><a href="library_Zend_Mvc_MvcEvent.php.html#104">MvcEvent::isError</a> (0%)</li>
+              <li><a href="library_Zend_Mvc_MvcEvent.php.html#19">MvcEvent::getRouter</a> (0%)</li>
+              <li><a href="library_Zend_Mvc_Application.php.html#403">Application::attachDefaultListeners</a> (0%)</li>
+              <li><a href="library_Zend_Mvc_Application.php.html#47">Application::setEventManager</a> (0%)</li>
+              <li><a href="library_Zend_Mvc_Application.php.html#314">Application::dispatch</a> (0%)</li>
+              <li><a href="library_Zend_Mvc_MvcEvent.php.html#120">MvcEvent::getController</a> (0%)</li>
+              <li><a href="library_Zend_Mvc_MvcEvent.php.html#125">MvcEvent::setController</a> (0%)</li>
+              <li><a href="library_Zend_Mvc_Router_RouteMatch.php.html#77">RouteMatch::getMatchedRouteName</a> (0%)</li>
+              <li><a href="library_Zend_Mvc_Router_RouteMatch.php.html#100">RouteMatch::getParams</a> (0%)</li>
+
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </center>
+
+    <br />
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr><td class="ruler"><img src="glass.png" width="3" height="3" alt=""></td></tr>
+      <tr><td class="versionInfo">Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.0.4</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.8-ZS5.5.0</a> and PHPUnit 3.5.14 at Fri Feb 17 11:28:56 CST 2012.</td></tr>
+    </table>
+
+    <br/>
+  </body>
+</html>
