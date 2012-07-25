@@ -1,10 +1,14 @@
 <?php
-require_once 'Zend/Controller/Action.php';
 
-class IndexController extends Zend_Controller_Action
+namespace Application\Controller;
+
+use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
+
+class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
+        return new ViewModel();
     }
 }
-

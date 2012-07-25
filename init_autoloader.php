@@ -14,9 +14,6 @@ if (file_exists('vendor/autoload.php')) {
     $loader = include 'vendor/autoload.php';
 }
 
-#temp hack
-putenv('ZF2_PATH=/home/nanders/code/sentinel/vendor/ZF2/library');
-
 // Support for ZF2_PATH environment variable or git submodule
 if ($zf2Path = getenv('ZF2_PATH') ?: (is_dir('vendor/ZF2/library') ? 'vendor/ZF2/library' : false)) {
     if (isset($loader)) {
