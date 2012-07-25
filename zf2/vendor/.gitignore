@@ -1,5 +1,0 @@
-!.gitignore
-.composer
-composer
-doctrine
-autoload.php
